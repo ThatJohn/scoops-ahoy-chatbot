@@ -69,8 +69,12 @@ header {
     position: relative;
 }
 
-#chatbox p {
+.bot-comment {
     font-family: 'Press Start 2P';
+}
+
+.user-comment {
+    font-family: sans-serif;
 }
 
 #comment-form {
@@ -82,4 +86,9 @@ header {
 #insert-comment {
     width: 280px;
     margin: 0 auto;
+}
+
+#comments {
+    height: 380px;
+    overflow-y: scroll;
 }

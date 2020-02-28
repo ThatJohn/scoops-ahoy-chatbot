@@ -32,9 +32,12 @@ carousel.show(2);
 carousel.next();
 
 document.addEventListener("DOMContentLoaded", () => {
-  const chatbot = document.getElementById("background-help");
-  const chatbox = document.getElementById("chat");
-  const close = document.getElementById("close");
+  let form = document.getElementById("comment-form");
+  let commentBox = document.getElementById('insert-comment');
+  let commentList = document.getElementById('comments');
+  let chatbot = document.getElementById("background-help");
+  let chatbox = document.getElementById("chat");
+  let close = document.getElementById("close");
   chatbot.addEventListener("click", () => {
     chatbot.id = "background-bot";
     chatbox.style.display = "inline";
@@ -44,6 +47,20 @@ document.addEventListener("DOMContentLoaded", () => {
     chatbot.id = "background-help";
     chatbox.style.display = "none";
   });
+
+  const updateComments = event => {
+    let newComment = document.createElement('p');
+    newComment.className = 'user-comment';
+    newComment.innerText = commentBox.value;
+
+    event.preventDefault();
+    commentList.appendChild(newComment);
+
+    form.reset();
+  }
+
+  form.addEventListener("submit", updateComments);
+
 
 
 });
