@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   close.addEventListener("click", () => {
     chatbot.id = "background-help";
+    commentList.innerHTML = ''
     chatbox.style.display = "none";
   });
 
@@ -55,12 +56,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
     event.preventDefault();
     commentList.appendChild(newComment);
+    botAnswers(commentBox.value);
 
     form.reset();
   }
 
   form.addEventListener("submit", updateComments);
 
+  const addBotComment = botResponse => {
+    let newComment = document.createElement('p');
+    newComment.className = 'bot-comment';
+    newComment.innerText = botResponse;
+    commentList.appendChild(newComment)
+  }
 
+  const botAnswers = (query) => {
+
+    switch (query) {
+      case "Scoops ahoy":
+        addBotComment("Scoops ahoy!");
+        break;
+      case "Where are you located?":
+        addBotComment("Starcourt mall, Hawkins Indiana");
+        break;
+      case "What do you think about kids?":
+        addBotComment("Turns out I'm a pretty damn good babysitter.");
+        break;
+    }
+  }
+
+  // No time left to add logic for Zipcode pattern matching
 
 });
