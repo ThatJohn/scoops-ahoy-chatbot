@@ -1,0 +1,85 @@
+body {
+    background-image: url('./images/background.jpg');
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-image: url('./images/header.jpg');
+    padding: 0;
+    margin: 0;
+    height:500px;
+    width: 1920px;
+    border-bottom: 5px solid #241d3c;
+}
+
+#carousel {
+    margin-top: 10px;   
+}
+
+#chatbot {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    /* display: grid; */
+}
+
+#background-bot {
+    background-image: url('./images/mascot.png');
+    height: 192px;
+    width: 128px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right:10px;
+    bottom:10px;
+}
+
+#background-help {
+    background-image: url('./images/help.png');
+    height: 64px;
+    width: 64px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#close {
+    background-image: url(./images/close.png);
+    height: 32px;
+    width: 32px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 300px;
+    cursor: pointer;
+}
+
+#chat {
+    display: none;
+}
+
+#chatbox {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    height: 512px;
+    width: 300px;
+    margin: 0 150px 0 0;
+    padding: 0 15px;
+    position: relative;
+}
+
+#chatbox p {
+    font-family: 'Press Start 2P';
+}
+
+#comment-form {
+    position: absolute;
+    bottom: 10px;
+    width: 280px;
+}
+
+#insert-comment {
+    width: 280px;
+    margin: 0 auto;
+}

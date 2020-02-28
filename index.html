@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./node_modules/vanilla-js-carousel/vanilla-js-carousel.css">
 </head>
+
 <body>
 
+  <header></header>
+
+  <div class="js-Carousel" id="carousel">
+    <ul>
+      <li><img src="./images/1.jpg" alt=""></li>
+      <li><img src="./images/2.png" alt=""></li>
+      <li><img src="./images/3.jpg" alt=""></li>
+      <li><img src="./images/4.jpg" alt=""></li>
+      <li><img src="./images/5.jpg" alt=""></li>
+    </ul>
+  </div>
+
+  <div id="chatbot">
+    <div id="chat">
+      <div id="close"></div>
+      <div id="chatbox">
+        <p>Hi! How may I help you?</p>
+        <hr>
+
+        <form id="comment-form">
+          <input id="insert-comment" type="text" placeholder="Ask me anything...">
+        </form>
+
+      </div>
+    </div>
+    <div id="background-help"></div>
+  </div>
+
+  <script src="http://localhost:35729/livereload.js"></script>
   <script src="dist/main.js"></script>
 </body>
+
 </html>

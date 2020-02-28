@@ -1,5 +1,5 @@
 {
-  "name": "simple-vanilla-boilerplate",
+  "name": "scoops-ahoy-chatbot",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -7,7 +7,7 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "server": "simplehttpserver",
-    "webpack:dev": "webpack -w --mode development",
+    "webpack:dev": "webpack -w --mode development --config webpack.config.js",
     "webpack:prod": "webpack --mode production"
   },
   "keywords": [],
@@ -17,9 +17,14 @@
     "@babel/plugin-transform-modules-commonjs": "^7.8.3",
     "axios": "^0.19.2",
     "babel-jest": "^25.1.0",
+    "extra-watch-webpack-plugin": "^1.0.3",
     "jest": "^25.1.0",
     "simplehttpserver": "^0.3.0",
+    "vanilla-js-carousel": "^3.1.2",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "webpack-livereload-plugin": "^2.3.0"
   }
 }
