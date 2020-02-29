@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const updateComments = event => {
     let newComment = document.createElement('p');
     newComment.className = 'user-comment';
-    newComment.innerText = commentBox.value;
+    newComment.innerHTML = `<span class="narrator">You say: </span>${commentBox.value}`;
 
     event.preventDefault();
     commentList.appendChild(newComment);
@@ -66,9 +66,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const addBotComment = botResponse => {
     let newComment = document.createElement('p');
     newComment.className = 'bot-comment';
-    newComment.innerText = botResponse;
+    newComment.innerHTML = `<span class="narrator">Steve says: </span>${botResponse}`;
     commentList.appendChild(newComment)
   }
+
 
   const botAnswers = (query) => {
 
