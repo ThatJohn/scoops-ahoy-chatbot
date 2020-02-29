@@ -8,20 +8,20 @@ header {
     background-image: url('./images/header.jpg');
     padding: 0;
     margin: 0;
-    height:500px;
-    width: 1920px;
+    height: 26vw;
+    width: 100vw;
+    background-size: cover;
     border-bottom: 5px solid #241d3c;
 }
 
 #carousel {
-    margin-top: 10px;   
+    margin-top: 100px;   
 }
 
 #chatbot {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    /* display: grid; */
 }
 
 #background-bot {
